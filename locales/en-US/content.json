@@ -1,0 +1,15 @@
+{
+  "ping": {
+    "title": "🏓 Pong! 🏓",
+    "isDev": "This is a development version of ActivityRank.",
+    "latency": {
+      "name": "🔁 Roundtrip Latency 🔁",
+      "value": "{{time}}ms"
+    },
+    "heartbeat": {
+      "name": "💗 API Heartbeat 💗",
+      "value": "{{time}}ms",
+      "empty": "*Not enough uptime*"
+    }
+  }
+}

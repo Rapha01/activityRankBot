@@ -1,5 +1,4 @@
 import {
-  SlashCommandBuilder,
   ActionRowBuilder,
   StringSelectMenuBuilder,
   EmbedBuilder,

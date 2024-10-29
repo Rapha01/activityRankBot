@@ -24,4 +24,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "i18n-ally.localesPaths": [
+    "locales"
+  ]
 }

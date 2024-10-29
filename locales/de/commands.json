@@ -1,0 +1,300 @@
+{
+  "bonus": {
+    "description": "Gib oder nimm einem Benutzer oder einer Rolle Bonus-XP.",
+    "options": {
+      "member": {
+        "description": "Ändere die Bonus XP eines Benutzers.",
+        "options": {
+          "member": {
+            "description": "Der Benutzer, dessen Bonus-XP geändert werden soll."
+          },
+          "change": {
+            "description": "Die Menge an XP, die dem Benutzer gegeben werden soll. Diese Option kann negativ sein."
+          }
+        }
+      },
+      "role": {
+        "description": "Ändern der Bonus-XP aller Benutzer mit einer bestimmten Rolle.",
+        "options": {
+          "member": {
+            "description": "Die zu ändernde Rolle."
+          },
+          "change": {
+            "description": "Die Menge an XP, die jedem Mitglied mit der Rolle gegeben werden soll. Kann negativ sein."
+          },
+          "use-beta": {
+            "description": "Beta. Es werden keine levelUpMessages gesendet."
+          }
+        }
+      }
+    }
+  },
+  "config-channel": {
+    "description": "Ändere eine Kanaleinstellung.",
+    "options": {
+      "channel": {
+        "description": "Der zu ändernde Kanal"
+      },
+      "id": {
+        "description": "Die ID des Kanals, welchen du bearbeiten möchtest."
+      }
+    }
+  },
+  "config-member": {
+    "description": "Ändere deine persönlichen Einstellungen."
+  },
+  "config-messages": {
+    "description": "Bearbeite die Servernachrichten"
+  },
+  "config-role": {
+    "description": "Ändere eine Rolleneinstellung",
+    "options": {
+      "levels": {
+        "description": "Setze ein Zuweisungs-/Aufhebungslevel für eine Rolle fest.",
+        "options": {
+          "role": {
+            "description": "Die zu bearbeitende Rolle"
+          },
+          "id": {
+            "description": "Die ID der Rolle, welche du bearbeiten möchtest."
+          },
+          "assign-level": {
+            "description": "Das Level, welches der Benutzer haben muss, um die Rolle zu erhalten."
+          },
+          "deassign-level": {
+            "description": "Das Level, welches der Benutzer haben muss, um die Rolle zu verlieren."
+          }
+        }
+      },
+      "menu": {
+        "description": "Öffnet ein Menü, um die Rolleneinstellungen zu bearbeiten.",
+        "options": {
+          "role": {
+            "description": "Die zu bearbeitende Rolle"
+          },
+          "id": {
+            "description": "Die ID der Rolle, welche bearbeitet werden soll"
+          }
+        }
+      }
+    }
+  },
+  "config-server": {
+    "description": "Ändere deine Serveeinstellungen.",
+    "options": {
+      "bonus": {
+        "description": "Ändere den Bonusnamen und das Emoji.",
+        "options": {
+          "tag": {
+            "description": "Der Bonusname, welches du nutzen möchtest."
+          },
+          "emote": {
+            "description": "Das Bonusemoji, welches du nutzen möchtest."
+          }
+        }
+      },
+      "vote": {
+        "description": "Passe den Votenamen und das Voteemote an.",
+        "options": {
+          "tag": {
+            "description": "Dein gewünschter Votename."
+          },
+          "emote": {
+            "description": "Dein gewünschtes Voteemote."
+          }
+        }
+      },
+      "entries-per-page": {
+        "description": "Stelle die Anzahl an Einträgen pro Seite für Embeds ein.",
+        "options": {
+          "value": {
+            "description": "Die Anzahl an Einträgen pro Seite."
+          }
+        }
+      },
+      "cooldown": {
+        "description": "Passe den Nachrichten- und votecooldown an.",
+        "options": {
+          "message": {
+            "description": "\nDie Zeit zwischen Nachrichten, bevor XP wieder gezählt werden."
+          },
+          "vote": {
+            "description": "Die Zeit zwischen upvotes, bevor XP wieder gezählt werden."
+          }
+        }
+      },
+      "set": {
+        "description": "Öffnet ein Menü zur Konfiguration der Servereinstellungen."
+      }
+    }
+  },
+  "config-xp": {
+    "description": "Ändere deine Server XP Einstellungen.",
+    "options": {
+      "bonustime": {
+        "description": "Starte die Bonuszeit für einen bestimmten Zeitraum.",
+        "options": {
+          "time": {
+            "description": "Die Zeit, wie lange der Bonuszeitraum dauern soll, in Minuten."
+          }
+        }
+      },
+      "levelfactor": {
+        "description": "Der Levelfaktor deines Servers. Der Levelfaktor wirkt sich auf den Schwierigkeitsgrad der Level aus.",
+        "options": {
+          "levelfactor": {
+            "description": "Der Levelfaktor, welcher auf dem Server genutzt werden soll."
+          }
+        }
+      },
+      "xp-per": {
+        "description": "Einstellung, wie viel XP welche Statistik geben soll.",
+        "options": {
+          "message": {
+            "description": "Die Menge an erhaltener XP pro gesendeter Nachricht."
+          },
+          "voiceminute": {
+            "description": "Die Menge an erhaltener XP pro Sprachminute."
+          },
+          "vote": {
+            "description": "Die Menge an erhaltener XP pro Upvote."
+          },
+          "invite": {
+            "description": "Die Menge an erhaltener XP pro Einladung."
+          }
+        }
+      },
+      "bonus-xp-per": {
+        "description": "Die Menge an Bonus XP pro Statistik während der Bonuszeitraum aktiv ist.",
+        "options": {
+          "message": {
+            "description": "Die Menge an Bonus XP für jede gesendete Nachricht während der Bonuszeitraum aktiv ist."
+          },
+          "voiceminute": {
+            "description": "Die Menge an Bonus XP für jede im Sprachkanal verbrachte Minute während der Bonuszeitraum aktiv ist."
+          },
+          "vote": {
+            "description": "Die Menge an Bonus XP für jeden erhaltenen Upvote während der Bonuszeitraum aktiv ist."
+          },
+          "invite": {
+            "description": "Die Menge an Bonus XP für jeden eingeladenen Benutzer während der Bonuszeitraum aktiv ist."
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "description": "Zeigt eine Auflistung aller FAQ.",
+    "options": {
+      "number": {
+        "description": "Zeigt eine spezifische FAQ an."
+      }
+    }
+  },
+  "help": {
+    "description": "Öffnet ein Hilfemenü über den Bot/die Befehle."
+  },
+  "inviter": {
+    "description": "Setze einen Benutzer, welcher dich eingeladen hat.",
+    "options": {
+      "member": {
+        "description": "Zeigt den Benutzer, welcher dich eingeladen hat."
+      }
+    }
+  },
+  "memberinfo": {
+    "description": "Zeigt Informationen über einen Benutzer.",
+    "options": {
+      "member": {
+        "description": "Zeigt Informationen über einen Benutzer."
+      }
+    }
+  },
+  "patchnote": {
+    "description": "Zeigt die Patchnotizen.",
+    "options": {
+      "member": {
+        "description": "Zeigt eine spezifische Patchversion. Wurde keine angegeben, wird die neuste Patchversion angezeigt."
+      }
+    }
+  },
+  "ping": {
+    "description": "Zeigt die Latenz des Bots an."
+  },
+  "rank": {
+    "description": "Zeigt deinen Rang oder den Rang eines anderen Benutzers an.",
+    "options": {
+      "member": {
+        "description": "Der Benutzer, dessen Rang angezeigt werden soll."
+      }
+    }
+  },
+  "reset": {
+    "description": "Setze deinen Server oder die Benutzer deins Servers zurück.",
+    "options": {
+      "member": {
+        "description": "Setzt die Statistiken eines bestimmten Benutzers zurück.",
+        "options": {
+          "member": {
+            "description": "Der gewünschte Benutzer, dessen Statistiken zurückgesetzt werden sollen."
+          }
+        }
+      },
+      "channel": {
+        "description": "Setzt alle Kanalstatistiken zurück.",
+        "options": {
+          "channel": {
+            "description": "Setzt die Statistiken eines gewünschten Kanals zurück."
+          }
+        }
+      },
+      "server": {
+        "description": "Setzt eine gewünschte Statistik auf dem gesamten Server zurück.",
+        "options": {
+          "settings": {
+            "description": "Setze alle Servereinstellungen zurück."
+          },
+          "statistics": {
+            "description": "Setze einen Statistiktyp für den gesamten Server zurück."
+          },
+          "all": {
+            "description": "Setzt alle Statistiken, XP und Einstellungen des Servers zurück."
+          }
+        }
+      },
+      "deleted": {
+        "description": "Statistiken für gelöschte Kanäle oder Mitglieder zurücksetzen.",
+        "options": {
+          "channel": {
+            "description": "Setzt die Statistiken eines gelöschten Kanals zurück.",
+            "options": {
+              "id": {
+                "description": "Die ID des Kanals, welcher zurückgesetzt werden soll."
+              }
+            }
+          },
+          "channels": {
+            "description": "Setzt die Statistiken aller Kanäle zurück, welche gelöscht wurden."
+          },
+          "members": {
+            "description": "Setzt die Statistiken aller Benutzer zurück, welche nicht mehr auf dem Server sind."
+          }
+        }
+      }
+    }
+  },
+  "serverinfo": {
+    "description": "Erhalte Informationen über den Server."
+  },
+  "top": {
+    "description": "Zeigt die top Benutzer und Kanäle des Servers."
+  },
+  "upvote": {
+    "description": "Upvote einen benutzer.",
+    "options": {
+      "member": {
+        "description": "Der Benutzer, für welchen du voten möchtest."
+      }
+    }
+  }
+}

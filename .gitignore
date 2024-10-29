@@ -6,3 +6,5 @@ config/keys.json
 config/config.json
 config/privilege.json
 config/*.local.*
+
+accent.json

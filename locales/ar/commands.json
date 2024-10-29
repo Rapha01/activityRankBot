@@ -1,0 +1,300 @@
+{
+  "bonus": {
+    "description": "Give or take bonus XP to a user or role.",
+    "options": {
+      "member": {
+        "description": "Change the bonus XP of a member.",
+        "options": {
+          "member": {
+            "description": "The member to modify the bonus XP of."
+          },
+          "change": {
+            "description": "The amount of XP to give to the member. This option may be negative."
+          }
+        }
+      },
+      "role": {
+        "description": "Change the bonus XP of all members with a given role",
+        "options": {
+          "member": {
+            "description": "The role to modify."
+          },
+          "change": {
+            "description": "The amount of XP to give to each member with the role. This option may be negative."
+          },
+          "use-beta": {
+            "description": "Enables the beta method of giving bonus to roles. Warning: will not send levelUpMessages."
+          }
+        }
+      }
+    }
+  },
+  "config-channel": {
+    "description": "Change a channel's settings.",
+    "options": {
+      "channel": {
+        "description": "The channel to modify"
+      },
+      "id": {
+        "description": "The ID of the channel to modify"
+      }
+    }
+  },
+  "config-member": {
+    "description": "Change your personal settings."
+  },
+  "config-messages": {
+    "description": "Configure the server's autopost messages."
+  },
+  "config-role": {
+    "description": "Change a role's settings.",
+    "options": {
+      "levels": {
+        "description": "Set assign/deassign levels for a role.",
+        "options": {
+          "role": {
+            "description": "The role to modify."
+          },
+          "id": {
+            "description": "The ID of the role to modify."
+          },
+          "assign-level": {
+            "description": "The level a member must be at to gain this role."
+          },
+          "deassign-level": {
+            "description": "The level a member must be at to lose this role."
+          }
+        }
+      },
+      "menu": {
+        "description": "Launches a menu to modify role settings.",
+        "options": {
+          "role": {
+            "description": "The role to modify."
+          },
+          "id": {
+            "description": "The ID of the role to modify."
+          }
+        }
+      }
+    }
+  },
+  "config-server": {
+    "description": "Change your server's settings.",
+    "options": {
+      "bonus": {
+        "description": "Set your bonusTag and emote.",
+        "options": {
+          "tag": {
+            "description": "The bonusTag to set."
+          },
+          "emote": {
+            "description": "The bonusEmote to set."
+          }
+        }
+      },
+      "vote": {
+        "description": "Set your voteTag and emote.",
+        "options": {
+          "tag": {
+            "description": "The voteTag to set."
+          },
+          "emote": {
+            "description": "The voteEmote to set."
+          }
+        }
+      },
+      "entries-per-page": {
+        "description": "Set the number of entries per page in embeds sent by the bot.",
+        "options": {
+          "value": {
+            "description": "The number of entries per page."
+          }
+        }
+      },
+      "cooldown": {
+        "description": "Change the message and vote cooldowns.",
+        "options": {
+          "message": {
+            "description": "The time between messages that can count for XP."
+          },
+          "vote": {
+            "description": "The time members must wait between upvotes."
+          }
+        }
+      },
+      "set": {
+        "description": "Open a menu to configure server settings."
+      }
+    }
+  },
+  "config-xp": {
+    "description": "Change your server's XP settings.",
+    "options": {
+      "bonustime": {
+        "description": "Start bonustime for a specified duration.",
+        "options": {
+          "time": {
+            "description": "The time for the bonustime to last, in minutes."
+          }
+        }
+      },
+      "levelfactor": {
+        "description": "Set your server's levelfactor. The levelfactor controls how quickly levels scale in difficulty.",
+        "options": {
+          "levelfactor": {
+            "description": "The levelfactor to use in the server."
+          }
+        }
+      },
+      "xp-per": {
+        "description": "Set the amount of XP gained from each source.",
+        "options": {
+          "message": {
+            "description": "The amount of XP gained per message sent"
+          },
+          "voiceminute": {
+            "description": "The amount of XP gained per minute spent in VC"
+          },
+          "vote": {
+            "description": "The amount of XP gained per upvote"
+          },
+          "invite": {
+            "description": "The amount of XP gained per member invited to the server"
+          }
+        }
+      },
+      "bonus-xp-per": {
+        "description": "Set the amount of bonus XP gained from each source while bonustime is active.",
+        "options": {
+          "message": {
+            "description": "The amount of XP gained per message sent during bonustime"
+          },
+          "voiceminute": {
+            "description": "The amount of XP gained per minute spent in VC during bonustime"
+          },
+          "vote": {
+            "description": "The amount of XP gained per upvote during bonustime"
+          },
+          "invite": {
+            "description": "The amount of XP gained per member invited to the server during bonustime"
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "description": "Display a list of Frequently Asked Questions.",
+    "options": {
+      "number": {
+        "description": "The specific FAQ to show."
+      }
+    }
+  },
+  "help": {
+    "description": "Show information for operating the bot."
+  },
+  "inviter": {
+    "description": "Set a member as your inviter.",
+    "options": {
+      "member": {
+        "description": "The user that invited you to the server."
+      }
+    }
+  },
+  "memberinfo": {
+    "description": "Show information about a member.",
+    "options": {
+      "member": {
+        "description": "The member to show information about."
+      }
+    }
+  },
+  "patchnote": {
+    "description": "Show patchnotes.",
+    "options": {
+      "member": {
+        "description": "The specific version to show. Defaults to the latest version."
+      }
+    }
+  },
+  "ping": {
+    "description": "Checks the bot's latency."
+  },
+  "rank": {
+    "description": "Find your or another member's rank",
+    "options": {
+      "member": {
+        "description": "The member to check the rank of."
+      }
+    }
+  },
+  "reset": {
+    "description": "Reset your server or members in your server.",
+    "options": {
+      "member": {
+        "description": "Reset a member's statistics.",
+        "options": {
+          "member": {
+            "description": "The member to reset."
+          }
+        }
+      },
+      "channel": {
+        "description": "Reset a channel's statistics.",
+        "options": {
+          "channel": {
+            "description": "The channel to reset."
+          }
+        }
+      },
+      "server": {
+        "description": "Reset some statistics of the entire server.",
+        "options": {
+          "settings": {
+            "description": "Reset all server settings."
+          },
+          "statistics": {
+            "description": "Reset one or more types of statistic for the entire server."
+          },
+          "all": {
+            "description": "Reset all server settings, XP, and statistics."
+          }
+        }
+      },
+      "deleted": {
+        "description": "Reset statistics for deleted channels or members.",
+        "options": {
+          "channel": {
+            "description": "Reset a deleted channel's statistics.",
+            "options": {
+              "id": {
+                "description": "The ID of the channel to reset."
+              }
+            }
+          },
+          "channels": {
+            "description": "Reset the statistics of all deleted channels."
+          },
+          "members": {
+            "description": "Reset the statistics of all members that have left the server."
+          }
+        }
+      }
+    }
+  },
+  "serverinfo": {
+    "description": "Get information about your server."
+  },
+  "top": {
+    "description": "Show the top members and channels in the server."
+  },
+  "upvote": {
+    "description": "Upvote a member.",
+    "options": {
+      "member": {
+        "description": "The member to upvote."
+      }
+    }
+  }
+}

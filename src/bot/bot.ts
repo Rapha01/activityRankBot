@@ -7,6 +7,7 @@ import { updateTexts } from 'models/managerDb/textModel.js';
 import { memberCache } from './models/guild/guildMemberModel.js';
 import { Time } from '@sapphire/duration';
 import { registry } from './util/registry/registry.js';
+import { ensureI18nLoaded } from './util/i18n.js';
 
 const intents = [
   GatewayIntentBits.Guilds,
@@ -104,6 +105,7 @@ async function start() {
     client.logger = loggerManager.init(client.shard!.ids);
     client.logger.info('Initialising...');
 
+    await ensureI18nLoaded();
     await initClientCaches(client);
 
     client.logger.info('Loading pieces...');

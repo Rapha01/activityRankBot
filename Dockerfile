@@ -3,6 +3,7 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY .swcrc ./
+COPY locales ./locales
 
 FROM base AS builder
 COPY src /usr/src/app/src
@@ -16,3 +17,4 @@ WORKDIR /usr/src/app
 COPY package.json package-lock.json ./
 RUN npm ci --production
 COPY --from=builder /usr/src/app/dist ./dist
+COPY --from=builder /usr/src/app/locales ./locales
